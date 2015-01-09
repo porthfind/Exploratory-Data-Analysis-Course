@@ -1,0 +1,1 @@
+library(data.table)input<-fread("household_power_consumption.txt",skip="1/2/2007", nrows=2880)y1<-input$V3hist(y1, main=paste("Global Active Power"), xlab="Global Active Power (kilowatts)",col="red")

@@ -1,0 +1,1 @@
+library(data.table)input<-fread("household_power_consumption.txt",skip="1/2/2007", nrows=2880)y1<-input$V1y2<-input$V2a<-as.POSIXct(paste(y1,y2), format="%d/%m/%Y %H:%M:%S")Sys.setlocale(category = "LC_TIME", locale = "C")plot(a,input$V3, type="l", ylab="Global Active Power (kilowatts)", xlab=" ")
